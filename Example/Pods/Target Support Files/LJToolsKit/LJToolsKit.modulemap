@@ -1,0 +1,6 @@
+framework module LJToolsKit {
+  umbrella header "LJToolsKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

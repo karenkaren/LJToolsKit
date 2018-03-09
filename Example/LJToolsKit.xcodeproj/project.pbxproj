@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		1009CC6E3E70CF394DCA40E7 /* Pods_LJToolsKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LJToolsKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C934C620A913DE71AB314E6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3C934C620A913DE71AB314E6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		420F8F8013AF1AB2753C4EC1 /* Pods-LJToolsKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJToolsKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-LJToolsKit_Example/Pods-LJToolsKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		50756116390D2E4F9CB72F03 /* Pods-LJToolsKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJToolsKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LJToolsKit_Example/Pods-LJToolsKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LJToolsKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJToolsKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,11 +60,11 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		61DF304DA0D5AADCB15A1250 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		61DF304DA0D5AADCB15A1250 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83CD8C57B485363384AD20AF /* Pods_LJToolsKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LJToolsKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9D1F5FAAC8D4007736BCD523 /* LJToolsKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LJToolsKit.podspec; path = ../LJToolsKit.podspec; sourceTree = "<group>"; };
+		9D1F5FAAC8D4007736BCD523 /* LJToolsKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LJToolsKit.podspec; path = ../LJToolsKit.podspec; sourceTree = "<group>"; };
 		C3058332C2A32B1BCF1B88D1 /* Pods-LJToolsKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJToolsKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LJToolsKit_Tests/Pods-LJToolsKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D465A9ED9E0AD81A2CDADD12 /* Pods-LJToolsKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJToolsKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LJToolsKit_Tests/Pods-LJToolsKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -250,6 +250,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = liujie;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 5347794US7;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -319,11 +322,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LJToolsKit_Example/Pods-LJToolsKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/LJToolsKit/LJToolsKit.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LJToolsKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -533,11 +540,13 @@
 			baseConfigurationReference = 50756116390D2E4F9CB72F03 /* Pods-LJToolsKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5347794US7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LJToolsKit/LJToolsKit-Prefix.pch";
 				INFOPLIST_FILE = "LJToolsKit/LJToolsKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.feifei.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -548,11 +557,13 @@
 			baseConfigurationReference = 420F8F8013AF1AB2753C4EC1 /* Pods-LJToolsKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5347794US7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LJToolsKit/LJToolsKit-Prefix.pch";
 				INFOPLIST_FILE = "LJToolsKit/LJToolsKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = com.feifei.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
