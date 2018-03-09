@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LJToolsKit_Example' do
+  pod 'LJToolsKit', :path => '../'
+
+  target 'LJToolsKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
